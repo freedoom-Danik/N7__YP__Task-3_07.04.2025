@@ -1,10 +1,20 @@
-﻿namespace N7__YP__Task_3_07._04._2025
+﻿using System.Numerics;
+
+namespace N7__YP__Task_3_07._04._2025
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            Console.Write("input Text ");
+            string input = Console.ReadLine();
+
+            int count = 0;
+            foreach (char c in input) 
+            {
+                if (c == '.' || c == '!' || c== '?') count++;
+            }
+            Console.Write($"Count string: {count}");       
         }
     }
 }
